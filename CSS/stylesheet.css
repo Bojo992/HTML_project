@@ -5,27 +5,29 @@ body{
     background-color: rgb(240, 249, 255);
     margin: 0;
 }
-
+/* HEADER */
 header {
     background-color: rgb(128, 174, 243);
     border-radius: 0px 0px 10px 10px;
     color: #fff;
+    position: relative;
 }
 
-#clinickName{
-    font-size: 50px;
+#clinicName{
+    font-size: 60px;
     font-weight: 800;
     text-align: center;
-    margin-bottom: 10px;
-    margin-top: 0;
-    margin-left: 0%;
+    margin: 0px 0px 10px 0px;
 }
 
 header table{
     table-layout: fixed;
     width: 200;
+    text-align: center;
     border-radius: 10px;
     background-color: rgb(59, 137, 255);
+    width: 100%;
+    height: 50px;
 }
 
 .headerLink{
@@ -39,34 +41,95 @@ header table{
 
 a.headerLink{
     display: inline-block;
-    line-height: 40px;
-    width: justify;
+    line-height: 50px;
+    width: 90%;
+    margin: 10px;
 }
 
 .headerLink:hover{
-    background-color: blue;
+    background-color: rgb(57, 57, 255);
     color: #fff;
     height: 15x;
     border-radius: 10px;
+    transition: 0.4s;
 }
 
-header table{
+/* MAIN */
+.slideshow{
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+}
+.Left{
+    position: absolute;
+    top: 200px;
+    right: 5%;
+}
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    right: 20%;
+    transform: translateX(-70%);
+    display: flex;
+}
+.bar{
+    width: 30px;
+    height: 10px;
+    background-color: rgb(59, 137, 255);
+    border-radius: 10px;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.bar:hover{
+    background-color: rgb(57, 57, 255);
+}
+input[name="r"]{
+    position: flex;
+    /* visibility: hidden; */
+}
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.slide{
+    width: 20%;
+    transition: 0.4s;
+}
+.slide img{
     width: 100%;
-    height: 50px;
+    height: 100%;
 }
 
+#r1:checked~.s1{
+    margin-left: 0%;
+}
+#r2:checked~.s2{
+    margin-left: -20%;
+}
+#r3:checked ~ .s3{
+    margin-left: -40%;
+}
+#r4:checked ~ .s4{
+    margin-left: -60%;
+}
+/* FOOTER */
 footer{
     background-color: rgb(59, 137, 255);
     border-radius: 10px 10px 0px 0px;
     color: #fff;
-    position: absolute;
-    bottom: 0;
-    padding: 0;
-    margin: 0;
+    position: relative;
+    bottom: 0%;
     width: 100%;
     height: 150px;
 }
 
+#address{
+    font-style: italic;
+    font-weight: 300;
+}
 .address{
     margin: 20px;
+    top:10%;
 }
