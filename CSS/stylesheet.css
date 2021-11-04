@@ -7,7 +7,7 @@ body{
 }
 /* HEADER */
 header {
-    background-color: rgb(128, 174, 243);
+    background-color: rgb(72, 223, 84);
     border-radius: 0px 0px 10px 10px;
     color: #fff;
     position: relative;
@@ -25,7 +25,7 @@ header table{
     width: 200;
     text-align: center;
     border-radius: 10px;
-    background-color: rgb(59, 137, 255);
+    background-color: rgb(59, 255, 92);
     width: 100%;
     height: 50px;
 }
@@ -47,7 +47,7 @@ a.headerLink{
 }
 
 .headerLink:hover{
-    background-color: rgb(57, 57, 255);
+    background-color: rgb(32, 201, 46)/*rgb(57, 255, 74)*/;
     color: #fff;
     height: 15x;
     border-radius: 10px;
@@ -56,69 +56,84 @@ a.headerLink{
 
 /* MAIN */
 .slideshow{
-    width: 700px;
+    width: 600px;
     height: 400px;
     overflow: hidden;
 }
 .Left{
     position: absolute;
-    top: 200px;
+    top: 150px;
     right: 5%;
 }
 .navigation{
     position: absolute;
     bottom: 20px;
-    right: 20%;
-    transform: translateX(-70%);
-    display: flex;
+    right: 40%;
+    /* transform: translateX(-70%); */
+    visibility: visible;
 }
 .bar{
     width: 30px;
     height: 10px;
-    background-color: rgb(59, 137, 255);
+    background-color: rgb(59, 255, 92);
     border-radius: 10px;
     margin: 6px;
     cursor: pointer;
     transition: 0.4s;
 }
 .bar:hover{
-    background-color: rgb(57, 57, 255);
+    background-color: rgb(57, 255, 74);
 }
 input[name="r"]{
-    position: flex;
+    position: static;
     /* visibility: hidden; */
 }
-.slides{
+/* .slides{
     display: flex;
-    width: 500%;
+    width:500%;
     height: 100%;
-}
+} */
 .slide{
-    width: 20%;
+    display: inline;
+    position: absolute;
+    width: 600px;
+    height: 400px;
     transition: 0.4s;
 }
+.s1{
+    visibility: hidden;
+}
+.s2{
+    visibility:hidden;
+}
+.s3{
+    visibility:hidden;
+}
+.s4{
+    visibility:hidden;
+}
 .slide img{
-    width: 100%;
+    width: 500px;
     height: 100%;
 }
-
-#r1:checked~.s1{
-    margin-left: 0%;
+#rp1:checked ~ div div img.s1{
+    visibility: visible;
 }
-#r2:checked~.s2{
-    margin-left: -20%;
+#r2:checked~ div div img.s2{
+    visibility: visible;
 }
-#r3:checked ~ .s3{
-    margin-left: -40%;
+#r3:checked ~ div div img.s3{
+    visibility: visible;
 }
-#r4:checked ~ .s4{
-    margin-left: -60%;
+#r4:checked ~ div div img.s4{
+    visibility: visible;
 }
 /* FOOTER */
 footer{
-    background-color: rgb(59, 137, 255);
+    background-color: rgb(59, 255, 92);
     border-radius: 10px 10px 0px 0px;
     color: #fff;
+    padding: 0%;
     position: relative;
     bottom: 0%;
     width: 100%;
