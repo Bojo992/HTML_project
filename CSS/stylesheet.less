@@ -1,0 +1,132 @@
+body{
+    margin: 0%;
+    font-family: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+#sideMenuCheckbox{
+    visibility: hidden;
+    position: absolute;
+}
+.topBlock{
+    background-image: url(/Images/trump.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    // background-attachment: fixed;
+    background-position: right buttom;
+    height: 700px;
+    width: 100%;
+    color: blue;
+    position: static; top:0%
+}
+header{
+    position: absolute;
+    width: 100%;
+    .title{text-align: center;
+        font-size: 60px;
+        font-weight: 500;
+        color: white;
+        width: 100%;
+        height: 90px;
+        i{
+            font-weight: 700;
+        }
+        // background-color: #002868;
+    }
+    
+    .sideMenu{
+        transition: 0.9s;
+        height: 100%;
+        width: 400px;
+        background: #f1f1f1;
+        position: fixed; right: -1000px; top: 0;    
+        .sideMenuOpenIcon{
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            transition: 1s;
+        }
+        .sideMenuCloseIcon{
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            transform: scale(0);
+            transition: 1s;
+        }
+        .sideMenuList{
+            top: 500px;
+        }
+        ul li:hover ~ a{
+            // visibility: hidden;
+            // background-color: #797979;
+                transform: translateX(20px);
+            // list-style-image: url(/Images/Background/star.png);
+        }
+        ul li{
+            transition: 1s;
+            font-weight: 500;
+            position: relative;
+            left: 10px;
+            top: 50px;
+            margin: 5% 0 5% 0;
+            a{
+                color: black;
+                font-size: 30px;
+                font-family: 'Yanone Kaffeesatz', sans-serif;
+            }
+        list-style: none;
+        }
+    }
+}
+#sideMenuCheckbox:checked ~ header .sideMenu{
+    right: 0px;
+}
+#sideMenuCheckbox:checked ~ header .sideMenu .sideMenuOpenIcon{
+    transform: scale(0) rotate(360deg) ;
+}
+#sideMenuCheckbox:checked ~ header .sideMenu .sideMenuCloseIcon{
+    transform: scale(1) rotate(-360deg);    
+}
+.quote{
+    i{
+        position: relative; top:50px;
+        font-weight: 100;
+    }
+    height: 500px;
+    background-color: #BF0A30;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+}
+.prosAndCons{
+    width: 100%;
+    height: 400px;
+    background: url(/Images/Background/nation.jpeg) no-repeat;
+    background-size: cover;
+    background-position: -10px;
+    background-attachment: fixed;
+    font-size: 30px;
+    text-align: center;
+    .infill{
+        position: relative;
+        top: 40px;
+        font-weight: 500;
+    }
+    .text{
+        position: relative;
+        top: 20px;
+        font-weight: 300;
+        font-size: 18px;
+        width: 50%;
+        transform: translateX(50%);
+    }
+}
+footer{
+    height: 500px;
+    width: 100%;
+    list-style: ;
+    background-color: #002868;
+}
