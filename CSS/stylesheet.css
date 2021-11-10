@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,500;0,800;1,100;1,300;1,500&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(240, 249, 255);
+    margin: 0;
+}
+/* HEADER */
+header {
+    background-color: rgb(72, 223, 84);
+    border-radius: 0px 0px 10px 10px;
+    color: #fff;
+    position: relative;
+}
+
+#clinicName{
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
+
+header table{
+    table-layout: fixed;
+    width: 200;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(59, 255, 92);
+    width: 100%;
+    height: 50px;
+}
+
+.headerLink{
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-size: 40;
+    text-align: center;
+    color: #fff;
+}
+
+a.headerLink{
+    display: inline-block;
+    line-height: 50px;
+    width: 90%;
+    margin: 10px;
+}
+
+.headerLink:hover{
+    background-color: rgb(32, 201, 46)/*rgb(57, 255, 74)*/;
+    color: #fff;
+    height: 15x;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+/* MAIN */
+.slideshow{
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+.Left{
+    position: absolute;
+    top: 150px;
+    right: 5%;
+}
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    right: 40%;
+    /* transform: translateX(-70%); */
+    visibility: visible;
+}
+.bar{
+    width: 30px;
+    height: 10px;
+    background-color: rgb(59, 255, 92);
+    border-radius: 10px;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.bar:hover{
+    background-color: rgb(57, 255, 74);
+}
+input[name="r"]{
+    position: static;
+    /* visibility: hidden; */
+}
+/* .slides{
+    display: flex;
+    width:500%;
+    height: 100%;
+} */
+.slide{
+    display: inline;
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    transition: 0.4s;
+}
+.s1{
+    visibility: hidden;
+}
+.s2{
+    visibility:hidden;
+}
+.s3{
+    visibility:hidden;
+}
+.s4{
+    visibility:hidden;
+}
+.slide img{
+    width: 500px;
+    height: 100%;
+}
+#rp1:checked ~ div div img.s1{
+    visibility: visible;
+}
+#r2:checked~ div div img.s2{
+    visibility: visible;
+}
+#r3:checked ~ div div img.s3{
+    visibility: visible;
+}
+#r4:checked ~ div div img.s4{
+    visibility: visible;
+}
+/* FOOTER */
+footer{
+    background-color: rgb(59, 255, 92);
+    border-radius: 10px 10px 0px 0px;
+    color: #fff;
+    padding: 0%;
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    height: 150px;
+}
+
+#address{
+    font-style: italic;
+    font-weight: 300;
+}
+.address{
+    margin: 20px;
+    top:10%;
+}
