@@ -11,6 +11,9 @@ input{
     position: absolute;
     visibility: hidden;
 }
+label{
+    cursor: pointer;
+}
 
 @media(max-width: 960px){
     header{
@@ -45,10 +48,11 @@ input{
             transform: scaleY(0);
         }
         .sideMenu{
-            transition: 1s;
+            transition: 2s;
                 position: absolute;
                 ul{
                     transform: translateX(13em);
+                    transition: 1s;
                     list-style: none;
                     position: absolute;
                     right: 0%;
