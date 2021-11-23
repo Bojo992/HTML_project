@@ -20,10 +20,9 @@ label{
         .trumpTopPhoto{
             width: 100%;
             z-index: -1;
+            object-fit: fill;
             position: relative;
-            top: 5em;
-            left: -15em;
-
+            transform: translateY(10px);
         } 
         .titleImageBackground{
             width: 100%;
@@ -87,10 +86,11 @@ label{
 @media(min-width: 960px){
 header{
     .trumpTopPhoto{
-        height: 50em;
+        width: 100%;
+        object-fit:fill;
         z-index: -1;
         position: relative;
-        transform: translate(-20em, 5em);
+        top:5px;
     }
     .titleImage{
         position: absolute;
@@ -125,7 +125,17 @@ header{
 }
 }
 
-
+.alert{
+    background-color: #BF0A30;
+    height: 3em;
+    font-size: 2em;
+    color: #fff;
+    padding-top: 1.5em;
+    text-align: center;
+    a{
+        color: #ccc;
+    }
+}
 
 footer{
     height: 15em;

@@ -23,7 +23,6 @@ label{
             z-index: -1;
             position: relative;
             top: 5em;
-            left: -15em;
 
         } 
         .titleImageBackground{
@@ -90,8 +89,10 @@ header{
     .trumpTopPhoto{
         height: 50em;
         z-index: -1;
+        width: 100%;
         position: relative;
-        transform: translate(-20em, 5em);
+        top: 5em;
+        height: auto;
     }
     .titleImage{
         position: absolute;
@@ -126,6 +127,56 @@ header{
 }
 }
 
+.whatWeStandFor{
+    background-color: #BF0A30;
+    height: 4em;
+    font-size: 2em;
+    color: #fff;
+    padding-top: 1.5em;
+    text-align: center;
+    div{
+        height: 4em;
+    }
+}
+
+
+
+.prosAndCons{
+    font-size: 1.5em;
+    .prosMain{
+        background-image: url(/Images/Background/eagle.jpg);
+        padding-left: 2em;
+
+        ul{
+            margin: 0px;
+            padding: 1em 0 2em 1em;
+            color: #fff;
+        }
+    }
+
+    .consMain{
+        background-image: url(/Images/Background/kamalaHarris.jpg);
+        background-size: cover;
+        height: 30em;
+        padding-left: 2em;
+
+        ul{
+            margin: 0px;
+            padding: 10em 0 2em 1em;
+            color: #fff;
+        }
+    }
+
+    .textCons{
+        background-color: #BF0A30;
+        height: 2em;
+        // transform: translateY(-1);
+        font-size: 2em;
+        color: #fff;
+        padding-top: 0.5em;
+        text-align: center;
+    }
+}
 
 footer{
     height: 15em;
