@@ -1,0 +1,186 @@
+body {
+    margin: 0%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  input {
+    position: absolute;
+    visibility: hidden;
+  }
+  label {
+    cursor: pointer;
+  }
+  @media (max-width: 960px) {
+    header {
+      margin: 0%;
+    }
+    header .trumpTopPhoto {
+      width: 100%;
+      z-index: -1;
+      position: relative;
+      top: 5em;
+    }
+    header .titleImageBackground {
+      width: 100%;
+      height: 5em;
+      background-color: #ccc;
+    }
+    header .titleImage {
+      position: fixed;
+      left: 2em;
+      top: 0.5em;
+      height: 4em;
+      width: 9em;
+    }
+    header label {
+      position: absolute;
+      top: 0.5em;
+      right: 0.5em;
+      transition: 0.4s;
+    }
+    header .sideMenuCloseIcon {
+      transform: scaleY(0);
+    }
+    header .sideMenu {
+      transition: 1s;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+    }
+    header .sideMenu ul {
+      transform: translateX(13em);
+      transition: 1s;
+      list-style: none;
+      position: absolute;
+      right: 0%;
+      top: 0em;
+      font-size: 16px;
+      height: 100%;
+      width: 10em;
+      background-color: #ccc;
+    }
+    header .sideMenu ul li a {
+      font-size: 2em;
+    }
+    header .sideMenu ul li {
+      margin: 1em 0px 1em 0px;
+    }
+    #sideMenuCheckbox:checked ~ header .sideMenu ul {
+      transform: translateX(0em);
+    }
+    #sideMenuCheckbox:checked ~ header .sideMenuCloseIcon {
+      transform: scale(1);
+    }
+    #sideMenuCheckbox:checked ~ header .sideMenuOpenIcon {
+      transform: scale(0);
+    }
+  }
+  @media (min-width: 960px) {
+    header .trumpTopPhoto {
+      height: 50em;
+      z-index: -1;
+      width: 100%;
+      position: relative;
+      top: 5em;
+      height: auto;
+    }
+    header .titleImage {
+      position: absolute;
+      left: 5em;
+      top: 0.5em;
+      height: 4em;
+      width: 9em;
+    }
+    header .sideMenu {
+      z-index: 1;
+      width: 100%;
+      height: 5em;
+      background-color: #ccc;
+      position: fixed;
+    }
+    header .sideMenu .sideMenuList {
+      width: 80%;
+    }
+    header .sideMenu ul li {
+      width: auto;
+      font-size: 2em;
+      margin-right: 1em;
+      display: inline;
+      position: relative;
+      top: 0.2em;
+      right: -7em;
+    }
+    header .sideMenu label,
+    header .sideMenu input {
+      visibility: hidden;
+      position: absolute;
+    }
+  }
+  .whatWeStandFor {
+    background-color: #BF0A30;
+    height: 4em;
+    font-size: 2em;
+    color: #fff;
+    padding-top: 1.5em;
+    text-align: center;
+  }
+  .whatWeStandFor div {
+    height: 4em;
+  }
+  .prosAndCons {
+    font-size: 1.5em;
+  }
+  .prosAndCons .prosMain {
+    background-image: url(../Images/Background/eagle.jpg);
+    padding-left: 2em;
+  }
+  .prosAndCons .prosMain ul {
+    margin: 0px;
+    padding: 1em 0 2em 1em;
+    color: #fff;
+  }
+  .prosAndCons .consMain {
+    background-image: url(../Images/Background/kamalaHarris.jpg);
+    background-size: cover;
+    height: 30em;
+    padding-left: 2em;
+  }
+  .prosAndCons .consMain ul {
+    margin: 0px;
+    padding: 10em 0 2em 1em;
+    color: #fff;
+  }
+  .prosAndCons .textCons {
+    background-color: #BF0A30;
+    height: 2em;
+    font-size: 2em;
+    color: #fff;
+    padding-top: 0.5em;
+    text-align: center;
+  }
+  footer {
+    height: 15em;
+    width: 100%;
+    background-color: #002868;
+    color: #fff;
+    font-size: 1.2em;
+  }
+  footer .folowUs {
+    width: 20%;
+    font-size: 1.1em;
+    transform: translate(1em, 1em);
+  }
+  footer .folowUs div a {
+    transform: translate(-1em);
+  }
+  footer .folowUs div img {
+    height: 2em;
+    margin: 0.5em;
+    transform: translate(-0.1em, 1em);
+  }
+  
